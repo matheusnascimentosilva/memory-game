@@ -75,7 +75,7 @@ function App() {
     setMatchedPairs(0);
     setScore(0);
     setTime(0);
-    setLives(10);
+    setLives(20);
     setIsGameOver(false);
   };
 
