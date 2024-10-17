@@ -1,38 +1,89 @@
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  background-color: #28125b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #533798;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 20px;
+  justify-content: center;
 }
+
+.card {
+  background-color: #1d0846;
+  border-color: #7252bd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  font-size: 3rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.match {
+  background-color: #61dafb;
+  color: #fff;
+}
+
+.card.open {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 50px;
+  color: #fff;
+}
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1d0a4b;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .card {
+    transition: transform 0.5s ease-in-out;
   }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
 }
