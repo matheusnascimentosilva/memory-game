@@ -4,7 +4,7 @@
 
 # Segunda Versão
 
-![image](https://github.com/user-attachments/assets/533d91ca-ea63-4938-a406-fb130c545f59)
+![image](https://github.com/user-attachments/assets/8a55a06b-b178-4583-8aba-f7e328453a1d)
 
 # Getting Started with Create React App
 
